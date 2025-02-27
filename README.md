@@ -64,18 +64,25 @@ This document outlines the Playwright and test concepts demonstrated in the prov
 * **Regex usage:**
     * Using regex to validate url patterns.
 
-## 🟢 Prerequisites
+## Prerequisites
 
 - Make sure you have [Node.js](https://nodejs.org/en). The LTS version should be fine. 
 - You will also need the `npm` package manager (which comes with Node.js).
 - A development environment or IDE with TypeScript support will help. [Visual Studio Code](https://code.visualstudio.com/) is a good choice.
 
-## 📦 Execution
+## Execution
 
 Clone the repository and then set everything up:
 
 ```shell
 npm ci
+```
+
+Create your `credentials.env` file using the `credentials.example.env` file provided. Add your valid username and password for logging into Hudl.
+
+```
+HUDL_USERNAME='your username'
+HUDL_PASSWORD='your password'
 ```
 
 As with any such project you should look at the `package.json` and see what scripts are provided.
