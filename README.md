@@ -77,6 +77,13 @@ Clone the repository and then set everything up:
 ```shell
 npm ci
 ```
+The reason for `npm ci` is covered best in this [Stack Overflow answer](https://stackoverflow.com/a/53325242).
+
+Make sure to install the browsers that Playwright will need.
+
+```shell
+npx playwright install
+```
 
 Create your `credentials.env` file using the `credentials.example.env` file provided. Add your valid username and password for logging into Hudl.
 
