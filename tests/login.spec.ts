@@ -1,10 +1,10 @@
 import { test, expect } from '@playwright/test';
 import { HudlPage } from './pages/hudl.page';
-import { getEnv } from './env/env';
+//import { global } from './env/env';
 
 test.describe('User Login Flow', () => {
     // Get environment variables
-    getEnv();
+    //getEnv();
 
     let username: string = process.env.HUDL_USERNAME || '';
     let password: string = process.env.HUDL_PASSWORD || '';

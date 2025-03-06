@@ -33,6 +33,7 @@ export default defineConfig({
     // Hudl uses data-qa-id for their test id attribute
     testIdAttribute: 'data-qa-id',
   },
+  globalSetup: require.resolve('./tests/global-setup'),
 
   /* Configure projects for major browsers */
   projects: [

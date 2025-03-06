@@ -1,8 +1,14 @@
 import * as dotenv from "dotenv";
 
-export const getEnv = () => {
+const getEnv = () => {
   dotenv.config({
     override: true,
     path: `tests/env/credentials.env`,
   });
 };
+
+async function globalSetup() {
+  getEnv();
+}
+
+export default globalSetup;
