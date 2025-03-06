@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { HudlPage } from './pages/hudl.page';
+import { HudlPage } from '../pages/hudl.page';
 //import { global } from './env/env';
 
 test.describe('User Login Flow', () => {
